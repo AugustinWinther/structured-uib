@@ -2,7 +2,9 @@
 
 Report template to be used for laboratory reports in the course PHYS114 - Basic Measurement Science and Experimental Physics, at the University of Bergen (https://www.uib.no/en/courses/PHYS114). The template is in Norwegian only as of now. English support may be added in the future.
 
-The name of the package is arbitrary such that it follows the naming guidelines of Typst. 
+The first part of the packages name is arbitrary, such that it follows the naming guidelines of Typst. 
+
+**Note:** The template uses the fonts **STIX Two Text** and **STIX Two Math**. If running Typst locally on your computer, make sure you have these fonts installed. There should be no font problems if you are using typst.app however.
 
 Usage:
 ```typ
