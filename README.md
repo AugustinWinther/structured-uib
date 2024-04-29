@@ -32,7 +32,8 @@ Usage:
 ```
 
 Front page:
-![alt text](thumbnail.png)
+![thumbnail](https://github.com/AugustinWinther/structured-uib/assets/30674646/a93718d8-362d-453b-8047-3c3c4388d442)
+
 
 ## Licenses
 `lib.typ` is licensed under MIT. The contents of the `template/` directory are licensed under MIT-0. The logo/emblem of the University of Bergen (located at `media/uib-emblem.svg`) is owned by their respective owners.
