@@ -20,7 +20,7 @@
   supervisor: "Professor Professorsen",
 )
 
-// INNHOLDSFORTEGNELSE
+// INNHOLDSFORTEGNELSE (automatisk fyllt ut)
 #outline()
 
 // 1 - MÅLSETTING
