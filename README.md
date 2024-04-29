@@ -1,4 +1,4 @@
-# Structured-UIB - A lab report template for the course PHYS114 at UiB
+# Structured-UiB - A lab report template for the course PHYS114 at UiB
 
 Report template to be used for laboratory reports in the course PHYS114 - Basic Measurement Science and Experimental Physics, at the University of Bergen (https://www.uib.no/en/courses/PHYS114). The template is in Norwegian only as of now. English support may be added in the future.
 
