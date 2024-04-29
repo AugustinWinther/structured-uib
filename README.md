@@ -4,7 +4,7 @@ Report template to be used for laboratory reports in the course PHYS114 - Basic 
 
 The first part of the packages name is arbitrary, such that it follows the naming guidelines of Typst. 
 
-**Note:** The template uses the fonts **STIX Two Text** and **STIX Two Math** (https://github.com/stipub/stixfonts/tree/master/fonts). If running Typst locally on your computer, make sure you have these fonts installed. There should be no font problems if you are using typst.app however.
+**Note:** The template uses the fonts **STIX Two Text** and **STIX Two Math** (https://github.com/stipub/stixfonts/tree/master/fonts). If running Typst locally on your computer, make sure you have these fonts installed. There should be no font problems if you are using Typst via https://typst.app however.
 
 Usage:
 ```typ
