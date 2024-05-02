@@ -13,8 +13,8 @@ Usage:
 
 // TEMPLATE SETTINGS
 #show: report.with(
-  task_no: "1",
-  task_name: "Måling og behandling av måledata",
+  task-no: "1",
+  task-name: "Måling og behandling av måledata",
   authors: (
     "Student Enersen",
     "Student Toersen", 
