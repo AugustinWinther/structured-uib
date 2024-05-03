@@ -1,5 +1,6 @@
 // IMPORTS
 #import "@preview/structured-uib:0.1.0": *
+#import "@preview/codedis:0.1.0": code
 
 // TEMPLATE SETTINGS
 #show: report.with(
