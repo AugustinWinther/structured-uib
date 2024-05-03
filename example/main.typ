@@ -1,6 +1,5 @@
 // IMPORTS
 #import "@preview/structured-uib:0.1.0": *
-#import "@preview/codedis:0.1.0": code
 
 // TEMPLATE SETTINGS
 #show: report.with(
@@ -21,11 +20,11 @@
   supervisor: "Professor Professorsen",
 )
 
-// INNHOLDSFORTEGNELSE
+// INNHOLDSFORTEGNELSE (automatisk fyllt ut)
 #outline()
 
 
-// 1. MÅLSETTING
+// 1 - MÅLSETTING
 = Oppgavens målsetting <chap.målsetting>
 Hva gjør vi og hvorfor? Kanskje vi får bruk for @eq.cool? Eller koden fra @code.litt_kode i @chap.kode?
 
@@ -63,11 +62,11 @@ Hva fikk vi? Er $pi = 3.14$? Diskusjonen finnes i @chap.konklusjon.
 Hvorfor skjedde det som skjedde? Hvorfor fikk vi det vi fikk i @tabl.data? Kanskje vi finner svaret i Newtons Principa Matemtika @bibl.newton.
 
 
-// REFERANSER
+// REFERANSER (automatisk fyllt ut)
 #bibliography("references.bib")
 
 
-// APPENDIKS
+// APPENDIKS innhold etter denne "show" linjen
 #show: appendices
 
 = Kode <chap.kode>
