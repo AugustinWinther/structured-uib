@@ -35,7 +35,7 @@ Usage:
 
 Front page:
 
-![thumbnail](https://github.com/AugustinWinther/structured-uib/assets/30674646/a93718d8-362d-453b-8047-3c3c4388d442)
+![thumbnail](https://raw.githubusercontent.com/AugustinWinther/structured-uib/refs/heads/main/thumbnail.png)
 
 
 ## Licenses
