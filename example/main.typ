@@ -1,6 +1,5 @@
 // IMPORTS
-#import "@preview/structured-uib:0.1.0": *
-#import "@preview/codedis:0.1.0": code
+#import "@preview/structured-uib:0.2.0": *
 
 // TEMPLATE SETTINGS
 #show: report.with(
@@ -21,13 +20,13 @@
   supervisor: "Professor Professorsen",
 )
 
-// INNHOLDSFORTEGNELSE (automatisk fyllt ut)
+// INNHOLDSFORTEGNELSE
 #outline()
 
 
-// 1 - MÅLSETTING
+// 1. MÅLSETTING
 = Oppgavens målsetting <chap.målsetting>
-Hva gjør vi og hvorfor? Kanskje vi får bruk for @eq.cool? Eller koden fra @code.litt_kode i @chap.kode?
+Hva gjør vi og hvorfor? Kanskje vi får bruk for @eq.cool?
 
 $
   f(x) = (pi e^(i x))
@@ -63,15 +62,13 @@ Hva fikk vi? Er $pi = 3.14$? Diskusjonen finnes i @chap.konklusjon.
 Hvorfor skjedde det som skjedde? Hvorfor fikk vi det vi fikk i @tabl.data? Kanskje vi finner svaret i Newtons Principa Matemtika @bibl.newton.
 
 
-// REFERANSER (automatisk fyllt ut)
+// REFERANSER
 #bibliography("references.bib")
 
 
-// APPENDIKS innhold etter denne "show" linjen
-#show: appendices
+// APPENDIKS
+#show: appendix.with()
 
-= Kode <chap.kode>
-#figure(
-  caption: [Bare litt kode], 
-  code(read("litt_kode.py"))
-)<code.litt_kode>
+= Ekstra info <chap.ekstra>
+Denne labben var kjempe gøy!
+

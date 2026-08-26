@@ -1,5 +1,5 @@
-// Original frontpage design by Fernando Herrera (ferherre@broadpark.no), made
-// in LaTeX originaly, converted to Typst by Augustin Winther (https://winther.io).
+// Original front page design by Fernando Herrera (ferherre@broadpark.no), made
+// in LaTeX originally, converted to Typst by Augustin Winther (https://winther.io).
 
 // TEMPLATE FUNCTION
 #let report(
@@ -66,7 +66,7 @@
   text(size: 18pt, [*Institutt for fysikk og teknologi*])
   linebreak()
   h(5mm)
-  text(size: 18pt, [*Det matematisk-naturvitenskapelige fakultet*])
+  text(size: 18pt, [*Fakultet for naturvitenskap og teknologi*])
   pagebreak()
   
   // PAGE SETUP FOR REST OF DOCUMENT
@@ -79,13 +79,8 @@
   counter(page).update(1) // Skip first page in numbering
   
   // PARAGRAPH SETUP
-  set par(justify: true,)
-  show par: set block(spacing: 0.65em)
-  show par: it => {
-    it
-    v(15pt, weak: true)
-  }
-  
+  set par(justify: true, spacing: 15pt)
+ 
   // HEADING SETUP
   set heading(numbering: "1.1.1 -")
   show heading: it => {
@@ -150,17 +145,17 @@
     // and overwrites link color to black from blue.
     if heading.level == 1 {    
       v(12pt, weak: true)
-      
+
       if heading.supplement == [Appendiks] {
         link(heading.location(), text(fill: rgb("#000"), 
-            [*Appendiks #it.body #box(width: 1fr,  it.fill) #it.page*]))
+            [*Appendiks #heading.body #box(width: 1fr, it.fill) #it.page()*]))
       } else {
         link(heading.location(), text(fill: rgb("#000"),
-            [*#it.body #box(width: 1fr,  it.fill) #it.page*]))
+            [*#heading.body #box(width: 1fr, it.fill) #it.page()*]))
       }
     }
     
-    // Do not show appendiks level 2 in outline, replace with vertical space. 
+    // Do not show appendix level 2 in outline, replace with vertical space. 
     // Show other level 2 chapters tho.
     if heading.level == 2 {
       if heading.supplement == [Appendiks] {
@@ -179,9 +174,9 @@
 }
 
 // APPENDIX FUNCTION
-#let appendices(body) = {
+#let appendix(body) = {
   
-  // Reset heading counter as appendicies uses own number system
+  // Reset heading counter as appendices uses own number system
   counter(heading).update(0)
   
   set heading(numbering: "A.1 -", supplement: "Appendiks")
@@ -193,6 +188,7 @@
     else {
       text(weight: "semibold")[#counter(heading).display() #it.body]
     }
+    v(0pt)
   }
 
   // Include content

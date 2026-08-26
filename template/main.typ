@@ -1,5 +1,5 @@
 // IMPORTS
-#import "@preview/structured-uib:0.1.0": *
+#import "@preview/structured-uib:0.2.0": *
 
 // TEMPLATE SETTINGS
 #show: report.with(
@@ -39,7 +39,7 @@
 #bibliography("references.bib")
 
 // Appendiks innhold etter denne "show" linjen
-#show: appendices  
+#show: appendix.with()
 
-// APPENDIKS A - KODE
-= Kode
+// APPENDIKS A - EKSTRA INFO
+= Ekstra Info
