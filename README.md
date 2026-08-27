@@ -35,7 +35,7 @@ Usage:
 
 Front page:
 
-![Image of an example front page of this template](/thumbnail.png)
+![Image of an example front page of this template](./thumbnail.png)
 
 
 ## Licenses
